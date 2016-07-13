@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/image_trailer_1"
+            />
+        <TextView
+
+            android:id="@+id/descripcion1"
+            android:text="@string/TextoAlicia1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:textSize="19sp"
+            android:textColor="#FFFFFF"
+            />
+        <TextView
+            android:id="@+id/descripcion2"
+            android:layout_below="@id/descripcion1"
+            android:text="@string/TextoAlicia2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            />
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_play"
+            />
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:progressBackgroundTint="@android:color/holo_orange_light"
+            android:numStars="5"
+            android:rating="3"
+            style="?android:ratingBarStyleSmall"
+            />
+
+    </RelativeLayout>
+
+    <!-- parte dos -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        >
+        <ImageView
+            android:id="@+id/imagen2"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/imagen_poster"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:id="@+id/clasificacion"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/imagen2"
+            android:text="@string/TextoAlicia3"
+            android:textSize="15sp"
+            android:textColor="#9c9289"
+            android:layout_gravity="center"
+            android:padding="5dip"
+            />
+
+        <TextView
+            android:id="@+id/aventura"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/imagen2"
+            android:layout_below="@id/clasificacion"
+            android:text="@string/TextoAlicia4"
+            android:textSize="15sp"
+            android:textColor="#9c9289"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:padding="5dip"
+            />
+
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/aventura"
+            android:text="@string/TextoAlicia5"
+            android:textSize="15sp"
+            android:textColor="#9c9289"
+            android:layout_toRightOf="@id/imagen2"
+            android:layout_gravity="center"
+            android:padding="5dip"
+            />
+
+        <Button
+            android:id="@+id/compartir"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_play"
+            android:layout_alignParentBottom="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+
+        <Button
+            android:id="@+id/corazoncito"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/compartir"
+            android:src="@drawable/icon_share"
+            />
+
+    </RelativeLayout>
+
+
+    <!--Parte Tres-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        >
+        <TextView
+            android:id="@+id/sinopsis"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/TextoAlicia6"
+            android:textSize="18sp"
+            android:textColor="#22375A"
+            />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_below="@id/sinopsis"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/TextoAlicia7"
+            android:textSize="15sp"
+            android:textColor="#9c9289"
+            android:typeface="serif"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
