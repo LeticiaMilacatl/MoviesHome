@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.);
 
-                siguiente=(Button)findViewById(android.R.id.button1);
+                siguiente=(Button)findViewById(R.id.button1);
                 siguiente.setOnClickListener(new View.OnClickListener(){
                                                  @Override
                                                  public void onClick(View v){
